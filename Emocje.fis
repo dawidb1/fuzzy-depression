@@ -2,7 +2,7 @@
 Name='Emocje'
 Type='mamdani'
 Version=2.0
-NumInputs=5
+NumInputs=6
 NumOutputs=1
 NumRules=0
 AndMethod='min'
@@ -14,51 +14,62 @@ DefuzzMethod='centroid'
 [Input1]
 Name='relacje_z_innymi'
 Range=[0 1]
-NumMFs=3
-MF1='szczątkowe':'zmf',[0.04 0.511904761904762]
-MF2='średnie':'trimf',[0.193 0.492 0.76058201058201]
-MF3='mocne':'smf',[0.443121693121693 0.935]
+NumMFs=4
+MF1='szczątkowe':'zmf',[0.0955555555555555 0.415555555555555]
+MF2='skomplikowane':'trimf',[0.103162962962963 0.402162962962963 0.602162962962963]
+MF3='silne':'smf',[0.502620634920635 1.00262063492064]
+MF4='normalne':'trimf',[0.408518518518519 0.658518518518519 0.879518518518519]
 
 [Input2]
 Name='odczucie_smutku'
 Range=[0 1]
 NumMFs=4
-MF1='brak':'trimf',[-0.4 0 0.4]
-MF2='rzadko':'trimf',[0.0247814814814815 0.343481481481482 0.599481481481482]
-MF3='ciągle':'trimf',[0.675925925925926 1 1.4]
-MF4='często':'trimf',[0.321439153439154 0.626439153439154 0.993439153439154]
+MF1='Brak':'zmf',[0.0208465608465608 0.546246560846561]
+MF2='Sporadyczne':'trimf',[-0.0613756613756615 0.338624338624338 0.738624338624339]
+MF3='Częste':'trimf',[0.205820105820106 0.605820105820106 1.00582010582011]
+MF4='Stałe':'gbellmf',[0.5 3.12 1.16036878306878]
 
 [Input3]
 Name='zdecydowanie'
 Range=[0 1]
-NumMFs=3
-MF1='brak':'trimf',[-0.4 0 0.4]
-MF2='średnie':'trimf',[0.1 0.5 0.9]
-MF3='wysokie':'trimf',[0.6 1 1.4]
+NumMFs=4
+MF1='Brak':'zmf',[-0.04 0.6]
+MF2='Małe':'gaussmf',[0.193 0.363708994708995]
+MF3='Duże':'smf',[0.640001058201058 0.960001058201058]
+MF4='Średnie':'gaussmf',[0.214 0.637471428571429]
 
 [Input4]
 Name='odczuwanie_przyjemnosci'
 Range=[0 1]
 NumMFs=4
-MF1='brak':'trimf',[-0.395 0.00529 0.252645502645503]
-MF2='niskie':'trimf',[0.0705 0.31 0.51984126984127]
-MF3='wysokie':'trimf',[0.689153439153439 1 1.4]
-MF4='średnie':'trimf',[0.324 0.628306878306878 0.912]
+MF1='Brak':'zmf',[0.04 0.36]
+MF2='Małe':'gaussmf',[0.1699 0.3042]
+MF3='Średnie':'gaussmf',[0.214 0.648082010582011]
+MF4='Duże':'smf',[0.64 0.96]
 
 [Input5]
 Name='myśli_samobójcze'
 Range=[0 1]
 NumMFs=3
-MF1='brak':'trimf',[-0.4 0 0.4]
-MF2='rzadko':'trimf',[0.1 0.5 0.9]
-MF3='często':'trimf',[0.6 1 1.4]
+MF1='Brak':'zmf',[0.04 0.487824675324675]
+MF2='Spekulacje':'trapmf',[0.0393 0.373 0.539772727272727 0.834]
+MF3='Zdecydowane':'smf',[0.540975324675325 0.860975324675325]
 
-[Output1]
-Name='Ryzyko_depresji'
+[Input6]
+Name='poczucie_winy'
 Range=[0 1]
 NumMFs=3
-MF1='niskie':'trimf',[-0.4 0 0.42989417989418]
-MF2='średnie':'trimf',[0.1 0.5 0.9]
-MF3='wysokie':'trimf',[0.6 1 1.4]
+MF1='Brak':'zmf',[0.04 0.36]
+MF2='Małe':'trapmf',[0.0361 0.310876623376623 0.506 0.756]
+MF3='Duże':'smf',[0.454935064935065 0.774935064935065]
+
+[Output1]
+Name='Stan_emocjonalny'
+Range=[0 1]
+NumMFs=4
+MF1='Krytyczny':'zmf',[0.0771818181818182 0.397181818181818]
+MF2='Niestabilny':'gaussmf',[0.194 0.349558441558441]
+MF3='Stabilny':'smf',[0.625362337662338 0.945362337662338]
+MF4='Przeciętny':'gaussmf',[0.2123 0.6347]
 
 [Rules]
