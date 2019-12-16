@@ -1,0 +1,64 @@
+[System]
+Name='Emocje'
+Type='mamdani'
+Version=2.0
+NumInputs=5
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='relacje_z_innymi'
+Range=[0 1]
+NumMFs=3
+MF1='szczątkowe':'zmf',[0.04 0.511904761904762]
+MF2='średnie':'trimf',[0.193 0.492 0.76058201058201]
+MF3='mocne':'smf',[0.443121693121693 0.935]
+
+[Input2]
+Name='odczucie_smutku'
+Range=[0 1]
+NumMFs=4
+MF1='brak':'trimf',[-0.4 0 0.4]
+MF2='rzadko':'trimf',[0.0247814814814815 0.343481481481482 0.599481481481482]
+MF3='ciągle':'trimf',[0.675925925925926 1 1.4]
+MF4='często':'trimf',[0.321439153439154 0.626439153439154 0.993439153439154]
+
+[Input3]
+Name='zdecydowanie'
+Range=[0 1]
+NumMFs=3
+MF1='brak':'trimf',[-0.4 0 0.4]
+MF2='średnie':'trimf',[0.1 0.5 0.9]
+MF3='wysokie':'trimf',[0.6 1 1.4]
+
+[Input4]
+Name='odczuwanie_przyjemnosci'
+Range=[0 1]
+NumMFs=4
+MF1='brak':'trimf',[-0.395 0.00529 0.252645502645503]
+MF2='niskie':'trimf',[0.0705 0.31 0.51984126984127]
+MF3='wysokie':'trimf',[0.689153439153439 1 1.4]
+MF4='średnie':'trimf',[0.324 0.628306878306878 0.912]
+
+[Input5]
+Name='myśli_samobójcze'
+Range=[0 1]
+NumMFs=3
+MF1='brak':'trimf',[-0.4 0 0.4]
+MF2='rzadko':'trimf',[0.1 0.5 0.9]
+MF3='często':'trimf',[0.6 1 1.4]
+
+[Output1]
+Name='Ryzyko_depresji'
+Range=[0 1]
+NumMFs=3
+MF1='niskie':'trimf',[-0.4 0 0.42989417989418]
+MF2='średnie':'trimf',[0.1 0.5 0.9]
+MF3='wysokie':'trimf',[0.6 1 1.4]
+
+[Rules]

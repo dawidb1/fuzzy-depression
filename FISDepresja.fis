@@ -1,0 +1,57 @@
+[System]
+Name='FISDepresja'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='Stabilność_wagi'
+Range=[0 1]
+NumMFs=3
+MF1='utrata':'zmf',[0.104589709762533 0.339089709762533]
+MF2='stabilnosc':'gbellmf',[0.291 3.63 0.50880580474934]
+MF3='przybranie':'smf',[0.552928759894459 0.872928759894459]
+
+[Input2]
+Name='Prolemy_ze_snem'
+Range=[0 1]
+NumMFs=4
+MF1='bezsenność':'zmf',[0.04 0.426781002638522]
+MF2='brak_problemów':'trimf',[0.121596306068602 0.406596306068602 0.699596306068602]
+MF3='ciągła_senność':'smf',[0.608337730870712 0.928337730870712]
+MF4='nieregularność':'trimf',[0.446969656992084 0.694969656992084 0.932969656992084]
+
+[Input3]
+Name='Apetyt'
+Range=[0 1]
+NumMFs=5
+MF1='brak':'zmf',[0.04 0.36]
+MF2='mały':'trimf',[-0.00208153034300799 0.264518469656992 0.532018469656992]
+MF3='nadmierny':'smf',[0.64 0.96]
+MF4='duży':'trimf',[0.492559366754617 0.726259366754617 1.00155936675462]
+MF5='normalny':'gbellmf',[0.204 3.28 0.497018469656992]
+
+[Input4]
+Name='Energia_w_ciągu_dnia'
+Range=[0 1]
+NumMFs=4
+MF1='brak':'zmf',[0.04 0.36]
+MF2='mało':'trimf',[0.0243754617414248 0.310675461741425 0.545675461741425]
+MF3='nadpobudliwość':'smf',[0.645277044854881 0.965277044854881]
+MF4='dużo':'trapmf',[0.384530343007916 0.479551451187335 0.744530343007916 0.848530343007916]
+
+[Output1]
+Name='wystepowanie_depresji'
+Range=[0 1]
+NumMFs=2
+MF1='brak':'zmf',[0.362 0.775065963060686]
+MF2='wystepowanie':'smf',[0.286 0.629947229551451]
+
+[Rules]
