@@ -2,7 +2,7 @@
 Name='FISDepresja'
 Type='mamdani'
 Version=2.0
-NumInputs=4
+NumInputs=5
 NumOutputs=1
 NumRules=0
 AndMethod='min'
@@ -46,6 +46,14 @@ MF1='brak':'zmf',[0.04 0.36]
 MF2='mało':'trimf',[0.0243754617414248 0.310675461741425 0.545675461741425]
 MF3='nadpobudliwość':'smf',[0.645277044854881 0.965277044854881]
 MF4='dużo':'trapmf',[0.384530343007916 0.479551451187335 0.744530343007916 0.848530343007916]
+
+[Input5]
+Name='Ryzyko_depresji'
+Range=[0 1]
+NumMFs=3
+MF1='niskie':'trimf',[-0.4 0 0.4]
+MF2='średnie':'trimf',[0.1 0.5 0.9]
+MF3='wysokie':'trimf',[0.6 1 1.4]
 
 [Output1]
 Name='wystepowanie_depresji'
