@@ -22,7 +22,7 @@ function varargout = Depresja(varargin)
 
 % Edit the above text to modify the response to help Depresja
 
-% Last Modified by GUIDE v2.5 13-Jan-2020 09:13:06
+% Last Modified by GUIDE v2.5 13-Jan-2020 10:32:58
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -96,8 +96,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Odczucie_Smutku_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Odczucie_Smutku (see GCBO)
+function SliderOdczucieSmutku_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderOdczucieSmutku (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -106,8 +106,8 @@ function Slider_Odczucie_Smutku_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Odczucie_Smutku_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Odczucie_Smutku (see GCBO)
+function SliderOdczucieSmutku_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderOdczucieSmutku (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -118,8 +118,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Zdecydowanie_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Zdecydowanie (see GCBO)
+function SliderZdecydowanie_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderZdecydowanie (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -128,8 +128,8 @@ function Slider_Zdecydowanie_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Zdecydowanie_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Zdecydowanie (see GCBO)
+function SliderZdecydowanie_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderZdecydowanie (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -140,8 +140,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Odczuwanie_Przyjemnosci_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Odczuwanie_Przyjemnosci (see GCBO)
+function SliderOdczuwaniePrzyjemnosci_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderOdczuwaniePrzyjemnosci (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -150,8 +150,8 @@ function Slider_Odczuwanie_Przyjemnosci_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Odczuwanie_Przyjemnosci_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Odczuwanie_Przyjemnosci (see GCBO)
+function SliderOdczuwaniePrzyjemnosci_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderOdczuwaniePrzyjemnosci (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -162,8 +162,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Mysli_Samobojcze_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Mysli_Samobojcze (see GCBO)
+function SliderMysliSamobojcze_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderMysliSamobojcze (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -172,8 +172,8 @@ function Slider_Mysli_Samobojcze_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Mysli_Samobojcze_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Mysli_Samobojcze (see GCBO)
+function SliderMysliSamobojcze_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderMysliSamobojcze (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -184,8 +184,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Poczucie_Winy_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Poczucie_Winy (see GCBO)
+function SliderPoczucieWiny_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderPoczucieWiny (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -194,8 +194,8 @@ function Slider_Poczucie_Winy_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Poczucie_Winy_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Poczucie_Winy (see GCBO)
+function SliderPoczucieWiny_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderPoczucieWiny (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -206,8 +206,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Stabilnosc_Wagi_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Stabilnosc_Wagi (see GCBO)
+function SliderStabilnoscWagi_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderStabilnoscWagi (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -216,8 +216,8 @@ function Slider_Stabilnosc_Wagi_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Stabilnosc_Wagi_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Stabilnosc_Wagi (see GCBO)
+function SliderStabilnoscWagi_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderStabilnoscWagi (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -228,8 +228,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Problemy_Ze_Snem_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Problemy_Ze_Snem (see GCBO)
+function SliderProblemyZeSnem_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderProblemyZeSnem (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -238,8 +238,8 @@ function Slider_Problemy_Ze_Snem_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Problemy_Ze_Snem_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Problemy_Ze_Snem (see GCBO)
+function SliderProblemyZeSnem_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderProblemyZeSnem (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -250,8 +250,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Apetyt_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Apetyt (see GCBO)
+function SliderApetyt_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderApetyt (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -260,8 +260,8 @@ function Slider_Apetyt_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Apetyt_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Apetyt (see GCBO)
+function SliderApetyt_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderApetyt (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -272,8 +272,8 @@ end
 
 
 % --- Executes on slider movement.
-function Slider_Energia_Callback(hObject, eventdata, handles)
-% hObject    handle to Slider_Energia (see GCBO)
+function SliderEnergia_Callback(hObject, eventdata, handles)
+% hObject    handle to SliderEnergia (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 
@@ -282,8 +282,8 @@ function Slider_Energia_Callback(hObject, eventdata, handles)
 
 
 % --- Executes during object creation, after setting all properties.
-function Slider_Energia_CreateFcn(hObject, eventdata, handles)
-% hObject    handle to Slider_Energia (see GCBO)
+function SliderEnergia_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to SliderEnergia (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    empty - handles not created until after all CreateFcns called
 
@@ -293,15 +293,25 @@ if isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColo
 end
 
 
-% --- Executes on button press in pushbutton2.
-function pushbutton2_Callback(hObject, eventdata, handles)
-% hObject    handle to pushbutton2 (see GCBO)
+% --- Executes on button press in Btn_Stan_Emocjonalny.
+function Btn_Stan_Emocjonalny_Callback(hObject, eventdata, handles)
+% hObject    handle to Btn_Stan_Emocjonalny (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+relacje = get(handles.SlicerRelacje, 'Value');
+odczucie_smutku = get(handles.SliderOdczucieSmutku, 'Value');
+zdecydowanie = get(handles.SliderZdecydowanie, 'Value');
+odczuwanie_przyjemnosci = get(handles.SliderOdczuwaniePrzyjemnosci, 'Value');
+mysli_samobojcze = get(handles.SliderMysliSamobojcze, 'Value');
+poczucie_winy = get(handles.SliderPoczucieWiny, 'Value');
 
-
-% --- Executes on button press in Btn_Ryzyko_Depresji.
+% --- Executes on button press in Btn_Stan_Emocjonalny.
 function Btn_Ryzyko_Depresji_Callback(hObject, eventdata, handles)
 % hObject    handle to Btn_Ryzyko_Depresji (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
+stabilnosc_wagi = get(handles.SliderStabilnoscWagi, 'Value');
+problemy_ze_snem = get(handles.SliderProblemyZeSnem, 'Value');
+apetyt = get(handles.SliderApetyt, 'Value');
+energia_w_ciagu_dnia = get(handles.SliderEnergia, 'Value');
+stan_emocjonalny = get(handles.TxtStanEmocjonalny, 'Value');
