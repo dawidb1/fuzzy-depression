@@ -305,6 +305,11 @@ odczuwanie_przyjemnosci = get(handles.SliderOdczuwaniePrzyjemnosci, 'Value');
 mysli_samobojcze = get(handles.SliderMysliSamobojcze, 'Value');
 poczucie_winy = get(handles.SliderPoczucieWiny, 'Value');
 
+FIS_stan_emocjonalny = readfis('Emocje.fis');   
+inputs = [relacje, odczucie_smutku, zdecydowanie, odczuwanie_przyjemnosci, mysli_samobojcze, poczucie_winy];
+[output_stan_emocjonalny]=evalfis(FIS_stan_emocjonalny, inputs);
+set(handles.TxtStanEmocjonalny, 'String', output_stan_emocjonalny);
+
 % --- Executes on button press in Btn_Stan_Emocjonalny.
 function Btn_Ryzyko_Depresji_Callback(hObject, eventdata, handles)
 % hObject    handle to Btn_Ryzyko_Depresji (see GCBO)
@@ -315,3 +320,8 @@ problemy_ze_snem = get(handles.SliderProblemyZeSnem, 'Value');
 apetyt = get(handles.SliderApetyt, 'Value');
 energia_w_ciagu_dnia = get(handles.SliderEnergia, 'Value');
 stan_emocjonalny = get(handles.TxtStanEmocjonalny, 'Value');
+
+FIS_ryzyko_depresji = readfis('FISDepresja.fis');   
+inputs = [stabilnosc_wagi, problemy_ze_snem, apetyt, energia_w_ciagu_dnia, stan_emocjonalny];
+[output_ryzyko_depresji]=evalfis(FIS_ryzyko_depresji, inputs);
+set(handles.TxtRyzykoDepresji, 'String', output_ryzyko_depresji);
